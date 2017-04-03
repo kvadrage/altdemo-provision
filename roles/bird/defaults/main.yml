@@ -1,0 +1,9 @@
+---
+save_local: "{{global.save_local|default('enabled')}}"
+
+sysctl_file: /etc/net/sysctl.conf
+bird_folder_local: "config/{{ansible_hostname}}/etc"
+bird_conf_local: "{{bird_folder_local}}/bird.conf"
+bird_conf: "/etc/bird.conf"
+
+bird_debug: "states, routes, filters, interfaces, events"
