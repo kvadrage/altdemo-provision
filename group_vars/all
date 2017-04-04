@@ -272,8 +272,8 @@ node:
 
     OSPF:
       interfaces:
-        - { name: "eth11", type: "pointopoint" }
-        - { name: "eth12", type: "pointopoint" }
+        - { name: "eth11", type: "pointopoint", link_detect }
+        - { name: "eth12", type: "pointopoint", link_detect }
       networks:
         - { net: "1.1.1.0/24", area: 0 }
         - { net: "172.16.0.0/12", area: 0 }
@@ -291,8 +291,8 @@ node:
 
     OSPF:
       interfaces:
-        - { name: "eth11", type: "pointopoint" }
-        - { name: "eth12", type: "pointopoint" }
+        - { name: "eth11", type: "pointopoint", link_detect }
+        - { name: "eth12", type: "pointopoint", link_detect }
       networks:
         - { net: "1.1.1.0/24", area: 0 }
         - { net: "172.16.0.0/12", area: 0 }
