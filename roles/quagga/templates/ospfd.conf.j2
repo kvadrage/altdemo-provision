@@ -13,9 +13,6 @@ interface {{iface.name}}
 {%   if iface.type is defined and iface.type == "pointopoint" %}
  ip ospf network point-to-point
 {%   endif %}
-{%   if iface.link_detect is defined %}
- link-detect
-{%   endif %}
 !
 {%  endfor %}
 {% endif %}

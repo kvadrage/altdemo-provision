@@ -13,6 +13,7 @@ hostname {{ansible_hostname}}
 {% if not intvars[iface].type is defined or intvars[iface].type != "loopback" %}
 interface {{iface}}
   ipv6 nd suppress-ra
+  link-detect
 {% endif %}
 !
 {% endfor %}
