@@ -43,8 +43,7 @@ node:
             - { name: "swp1s0", type: "pointopoint", check_link }
           stubnets:
             - { net: "1.1.1.0/24", summary, cost: 1000 }
-            - { net: "10.1.0.0/16", summary, cost: 1000 }
-            - { net: "10.2.0.0/16", summary, cost: 1000 }
+            - { net: "10.0.0.0/8", summary, cost: 1000 }
       import: import_ospf
       export: export_ospf
 
@@ -88,8 +87,7 @@ node:
             - { name: "swp1s0", type: "pointopoint", check_link }
           stubnets:
             - { net: "1.1.1.0/24", summary, cost: 1000 }
-            - { net: "10.1.0.0/16", summary, cost: 1000 }
-            - { net: "10.2.0.0/16", summary, cost: 1000 }
+            - { net: "10.0.0.0/8", summary, cost: 1000 }
       import: import_ospf
       export: export_ospf
 
@@ -133,8 +131,7 @@ node:
             - { name: "swp1s0", type: "pointopoint", check_link }
           stubnets:
             - { net: "1.1.1.0/24", summary, cost: 1000 }
-            - { net: "10.1.0.0/16", summary, cost: 1000 }
-            - { net: "10.2.0.0/16", summary, cost: 1000 }
+            - { net: "10.0.0.0/8", summary, cost: 1000 }
       import: import_ospf
       export: export_ospf
 
@@ -178,8 +175,7 @@ node:
             - { name: "swp1s0", type: "pointopoint", check_link }
           stubnets:
             - { net: "1.1.1.0/24", summary, cost: 1000 }
-            - { net: "10.1.0.0/16", summary, cost: 1000 }
-            - { net: "10.2.0.0/16", summary, cost: 1000 }
+            - { net: "10.0.0.0/8", summary, cost: 1000 }
       import: import_ospf
       export: export_ospf
 
